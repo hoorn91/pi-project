@@ -34,8 +34,8 @@ function files($dir){
 
 <ul class="nav nav-tabs">
   <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-  <li><a href="#NES" data-toggle="tab">Profile</a></li>
-  <li class="#SNES"><a>Disabled</a></li>
+  <li><a href="#NES" data-toggle="tab">NES</a></li>
+  <li><a href="#SNES" data-toggle="tab">SNES</a></li>
 </ul>
 <div id="myTabContent" class="tab-content">
   <div class="tab-pane fade active in" id="home">
