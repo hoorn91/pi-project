@@ -21,7 +21,6 @@ GPIO.output(led2, 0)
 GPIO.output(led3, 0)
 #time.sleep(10)
 while True:
-	if GPIO.input(button) == False:
 		x = random.randint(1,3)
 		if x == 1:
 			GPIO.output(led, 1)
@@ -35,5 +34,5 @@ while True:
 			GPIO.output(led, 0)
 			GPIO.output(led2, 0)
 			GPIO.output(led3, 1)	
-#time.sleep(1)	
+time.sleep(0.5)	
 GPIO.cleanup()
