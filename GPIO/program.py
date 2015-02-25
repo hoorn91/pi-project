@@ -19,7 +19,7 @@ GPIO.setup(button, GPIO.IN, GPIO.PUD_UP)
 GPIO.output(led, 0)
 GPIO.output(led2, 0)
 GPIO.output(led3, 0)
-#time.sleep(10)
+time.sleep(10)
 while True:
 	x = random.randint(1,3)
 	if x == 1:
