@@ -34,5 +34,5 @@ while True:
 			GPIO.output(led, 0)
 			GPIO.output(led2, 0)
 			GPIO.output(led3, 1)	
-time.sleep(0.5)	
+time.sleep(0.9)	
 GPIO.cleanup()
