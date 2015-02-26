@@ -15,7 +15,9 @@ try:
 	while True:
 		if GPIO.input(pir):
 				print("MOTION DETECTED!!!!!")
+				GPIO.output(buzz, 1)
 		time.sleep(1)
+		GPIO.output(buzz, 0)
 
 except KeyboardInterrupt:
 	print "Program Shutdown"
