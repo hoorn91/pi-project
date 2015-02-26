@@ -5,20 +5,14 @@ import random
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-led = 4
-led2 = 14
-led3 = 15
-button = 18
-GPIO.setup(led, GPIO.OUT)
-GPIO.setup(led2, GPIO.OUT)
-GPIO.setup(led3, GPIO.OUT)
-GPIO.setup(button, GPIO.IN, GPIO.PUD_UP)
-GPIO.output(led, 0)
-GPIO.output(led2, 0)
-GPIO.output(led3, 0)
+pir = 4
+
+GPIO.setup(pir, GPIO.IN)
+time.sleep(2)
 
 while True:
-	if GPIO.input(button):
-            print("button pressed")
+	if GPIO.input(pir):
+            print("MOTION DETECTED!!!!!")
             break
+	time.sleep(1)
 GPIO.cleanup()
