@@ -18,7 +18,7 @@ GPIO.output(led2, 0)
 GPIO.output(led3, 0)
 
 while True:
-	if GPIO.input(button) == False:
+	if GPIO.input(button):
             print("button pressed")
             break
 GPIO.cleanup()
