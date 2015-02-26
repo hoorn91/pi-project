@@ -13,6 +13,5 @@ time.sleep(2)
 while True:
 	if GPIO.input(pir):
             print("MOTION DETECTED!!!!!")
-            break
 	time.sleep(1)
 GPIO.cleanup()
