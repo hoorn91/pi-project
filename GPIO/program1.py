@@ -17,6 +17,6 @@ try:
 				print("MOTION DETECTED!!!!!")
 		time.sleep(1)
 
-except KeyboardInterrupt
+except KeyboardInterrupt:
 	print "Program Shutdown"
 	GPIO.cleanup()
